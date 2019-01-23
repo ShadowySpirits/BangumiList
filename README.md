@@ -1,4 +1,4 @@
-# Typecho 追番插件
+# Typecho 追番列表插件
 
 #### 项目介绍
 Bangumi 追番列表插件 Typecho 版
@@ -7,7 +7,7 @@ Bangumi 追番列表插件 Typecho 版
 
 插件效果见此处：https://blog.sspirits.top/about.html
 
-####使用方法：
+#### 使用方法：
 
   1. 在 [Release](https://github.com/ShadowySpirits/BangumiList/releases) 中下载此插件的最新版，上传至网站的/usr/plugins/目录下；
   2. 启用该插件，正确填写相关信息。
