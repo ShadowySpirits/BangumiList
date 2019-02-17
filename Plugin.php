@@ -70,34 +70,17 @@ class BangumiList_Plugin implements Typecho_Plugin_Interface
     public static function output()
     {
         $cssPath = Helper::options()->pluginUrl . '/BangumiList/loading.css';
-        return '<link rel="stylesheet" type="text/css" href="' . $cssPath . '" />' . '<div id="bangumiList">
-        	<div class="bangumi_loading">
-            <div class="loading-anim">
-                <div class="border out"></div>
-                <div class="border in"></div>
-                <div class="border mid"></div>
-                <div class="circle">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+        return '<link rel="stylesheet" type="text/css" href="' . $cssPath . '" />' .
+            '<div id="bangumiList" class="bangumiList">
+        	    <div>
+                    <div class="bangumi_loading">
+                        <div class="inner one"></div>
+                        <div class="inner two"></div>
+                        <div class="inner three"></div>
+                        </div>
+                    <div class="bangumi_loading_text">追番列表加载中...</div>
                 </div>
-                <div class="bangumi_loading_text">追番列表加载中...</div>
-            </div>
-            </div>
-
-        
-        </div>
-        
-        <div style="clear:both"></div>' . "
+            </div>' . "
 		<script>
 			jQuery.ajax({
 				type: 'GET',

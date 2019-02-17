@@ -101,6 +101,7 @@ class BangumiAPI
 </a>
           ";
         }
+        echo '<div style="clear:both"></div>';
     }
 
     private static function curl_get_contents($_url)
